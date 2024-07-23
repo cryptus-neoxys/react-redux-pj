@@ -1,9 +1,7 @@
 export const TransactionItem = ({ transaction, onDelete }) => {
   return (
     <li
-      className={`flex items-center justify-between p-2 bg-${
-        transaction.type === "income" ? "green" : "red"
-      }-300  rounded`}
+      className={`flex items-center justify-between p-2 bg- ${transaction.type ==="expense" ? "bg-red-300" : "bg-green-300"} rounded`}
     >
       <span>{transaction.amount}</span>
       <span>{transaction.description}</span>
